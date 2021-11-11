@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myingressresource
+spec:
+  rules:
+  - host: openshift-cluster-dal-cbfb3bb05763340853fcb722ad8ed5e3-0000.us-south.containers.appdomain.cloud
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: listas
+            port:
+              number: 80
