@@ -7,8 +7,11 @@
 3. [Crear Proyectos](#Crear-proyectos-computer)
     * [Desplegar aplicación listas](#Desplegar-aplicación-listas)
     * [Desplegar aplicación de ejemplo NET](#Desplegar-aplicación-de-ejemplo-NET)
-4. [Referencias](#Referencias-mag)
-5. [Autores](#Autores-black_nib)
+4. [Exponer aplicaciones mediante Ingress](#Exponer-aplicaciones-mediante-Ingress-outbox_tray)
+    * [Subdominio proporcionado por IBM](#Subdominio-proporcionado-por-IBM)
+    * [Nombre de dominio personalizado](#Nombre-de-dominio-personalizado)
+5. [Referencias](#Referencias-mag)
+6. [Autores](#Autores-black_nib)
 <br />
 
 ## Pre-Requisitos :pencil:
@@ -120,6 +123,14 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
 <br />
 
 ### Desplegar aplicación de ejemplo NET
+<br />
+
+## Exponer  aplicaciones mediante Ingress :outbox_tray:
+
+### Subdominio proporcionado por IBM
+<br />
+
+### Nombre de dominio personalizado
 <br />
 
 ## Referencias :mag:
