@@ -5,7 +5,7 @@
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
 2. [Crear Proyectos](#Crear-proyectos-computer)
     * [Desplegar aplicación listas](#Desplegar-aplicación-listas)
-    * [Desplegar aplicación de ejemplo .NET](#Desplegar-aplicación-de-ejemplo-.NET)
+    * [Desplegar aplicación de ejemplo .NET](#Desplegar-aplicación-de-ejemplo)
 3. [Referencias](#Referencias-mag)
 4. [Autores](#Autores-black_nib)
 <br />
