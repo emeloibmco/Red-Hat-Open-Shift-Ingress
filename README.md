@@ -125,7 +125,7 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
 ### Desplegar aplicación de ejemplo NET
 <br />
 
-## Exponer  aplicaciones mediante Ingress :outbox_tray:
+## Exponer aplicaciones mediante Ingress :outbox_tray:
 
 ### Subdominio proporcionado por IBM
 <br />
