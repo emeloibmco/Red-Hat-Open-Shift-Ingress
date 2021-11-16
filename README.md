@@ -3,11 +3,23 @@
 
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
-2. [Referencias](#Referencias-mag)
-3. [Autores](#Autores-black_nib)
+2. [Crear Proyectos](#Crear-proyectos-computer)
+    * [Desplegar aplicación listas](#Desplegar-aplicación-listas)
+    * [Desplegar aplicación de ejemplo .NET](#Desplegar-aplicación-de-ejemplo-.NET)
+3. [Referencias](#Referencias-mag)
+4. [Autores](#Autores-black_nib)
 <br />
 
 ## Pre-Requisitos :pencil:
+<br />
+
+## Crear Proyectos :computer:
+<br />
+
+### Desplegar aplicación listas
+<br />
+
+### Desplegar aplicación de ejemplo .NET
 <br />
 
 ## Referencias :mag:
