@@ -227,7 +227,14 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 
    <br />   
 
-8. 
+
+8. Prueba
+
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/IngressListas.gif"></p>
+
+   <br />  
 
 <br />
 
