@@ -15,6 +15,8 @@
 <br />
 
 ## Pre-Requisitos :pencil:
+* Cuenta en IBM Cloud.
+* Clúster OpenShift en VPC.
 <br />
 
 ## Acceder al clúster :round_pushpin:
@@ -128,6 +130,130 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
 ## Exponer aplicaciones mediante Ingress :outbox_tray:
 
 ### Subdominio proporcionado por IBM
+Para exponer aplicaciones a través del ingress es posible usar el *Ingress subdomain* del clúster OpenShift. Para este caso de ejemplo, se va a exponer la aplicación desplegada *Angular Web List*. Complete los siguientes pasos para exponer su aplicación:
+<br />
+
+1. Obtenga el *Ingress subdomain* de su clúster y guárdelo para utilizarlo en las configuraciones posteriores. Utilice el comando:
+
+   ```powershell
+   ibmcloud oc cluster get -c <cluster_name_or_ID> | grep 'Ingress Subdomain'
+   ```
+   
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/IngressSubdomain.PNG"></p>
+
+   <br />   
+   
+2. Clone el presente repositorio, ya que este contiene el archivo .yaml necesario para la implementación del ingress. Coloque el comando:
+
+   ```powershell
+   git clone https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress
+   ```
+   
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/ClonarRepoIngress.PNG"></p>
+
+   <br />   
+   
+3. Cambie su ubicación a la carpeta que contiene el archivo .yaml del ingress. Para ello coloque:
+
+   ```powershell
+   cd Red-Hat-Open-Shift-Ingress
+   ```
+   
+   ```powershell
+   cd Files
+   ```
+   
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/cdIngressFiles.PNG"></p>
+
+   <br />   
+   
+4. Visualice el contenido del archivo .yaml con el comando:
+
+   ```powershell
+   cat myingressresource.yaml
+   ```
+   
+   El archivo que debe visualizar contiene lo siguiente:
+   
+   ```powershell
+   apiVersion: networking.k8s.io/v1
+   kind: Ingress
+   metadata:
+     name: myingressresource
+   spec:
+     rules:
+     - host: <ingress_subdomain>
+       http:
+         paths:
+         - path: /<app_path>
+           pathType: ImplementationSpecific
+           backend:
+             service:
+               name: <service_name>
+               port:
+                 number: <service_port>
+   ```  
+      
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/catInicial.PNG"></p>
+
+   <br />   
+  
+ 5. Edite el archivo .yaml con los datos de su aplicación y clúster. Para ello coloque el comando:
+ 
+   ```
+   nano myingressresource.yaml
+   ```
+   
+   Una vez se encuentre dentro del editor modifique lo siguiente:
+      * ```apiVersion```: si su clúster es de versión 4.6 o posterior coloque ```networking.k8s.io/v1```. Si su clúster es de versión 4.5 o menor coloque ```networking.k8s.io/v1beta1```.
+      * ```host: <ingress_subdomain>```: en el valor de <ingress_subdomain> coloque el *Ingress subdomain* de su clúster, obtenido en el paso 1.
+      * ```path: /<app_path>```: reemplace ```<app_path>``` con la ruta en la que escucha su aplicación. Si su aplicación no escucha en una ruta específica, defina la ruta raíz solo con ```/```. 
+      * ```name: <service_name>```: reemplce ```<service_name>``` con el nombre del servicio de la aplicación. Por ejemplo: ```name: listas```.
+      * ```number: <service_port>```: indique el puerto de escucha del servicio en ```<service_port>```. 
+   
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/nanoFinal.PNG"></p>
+
+   <br />    
+   
+   Presione ```Ctrl s``` para guardar el archivo y luego ```Ctrl x``` para salir.
+
+6. Visualice nuevamente el archivo con el comando ```cat myingressresource.yaml``` e identifique los cambios realizados en base a su información.
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/catFinal.PNG"></p>
+
+   <br />    
+   
+7. Cree el recurso ingress en el proyecto donde se encuentra su aplicación. Use el comando:
+
+   ```powershell
+   oc apply -f myingressresource.yaml -n <project>
+   ```
+   
+   Ejemplo:
+   
+   ```powershell
+   oc apply -f myingressresource.yaml -n angular-web-list
+   ```
+
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/createIngress.PNG"></p>
+
+   <br />   
+
+8. 
+
 <br />
 
 ### Nombre de dominio personalizado
