@@ -134,33 +134,28 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 <br />
 
 1. Obtenga el *Ingress subdomain* de su clúster y guárdelo para utilizarlo en las configuraciones posteriores. Utilice el comando:
-<br />
 
    ```powershell
    ibmcloud oc cluster get -c <cluster_name_or_ID> | grep 'Ingress Subdomain'
    ```
-   
-   <br />
    
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/IngressSubdomain.PNG"></p>
 
    <br />   
    
 2. Clone el presente repositorio, ya que este contiene el archivo .yaml necesario para la implementación del ingress. Coloque el comando:
-<br />
+
 
    ```powershell
    git clone https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress
    ```
-   
-   <br />
    
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/ClonarRepoIngress.PNG"></p>
 
    <br />   
    
 3. Cambie su ubicación a la carpeta que contiene el archivo .yaml del ingress. Para ello coloque:
-<br />
+
 
    ```powershell
    cd Red-Hat-Open-Shift-Ingress
@@ -169,8 +164,6 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    ```powershell
    cd Files
    ```
-   
-   <br />
    
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/cdIngressFiles.PNG"></p>
 
@@ -182,6 +175,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    ```powershell
    cat myingressresource.yaml
    ```
+   <br />
    
    El archivo que debe visualizar contiene lo siguiente:
    
@@ -204,14 +198,12 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
                  number: <service_port>
    ```  
       
-   <br />
-   
+     
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/catInicial.PNG"></p>
 
    <br />   
   
 5. Edite el archivo .yaml con los datos de su aplicación y clúster. Para ello coloque el comando:
-<br />
 
    ```
    nano myingressresource.yaml
