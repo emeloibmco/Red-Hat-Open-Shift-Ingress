@@ -211,7 +211,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    
    Una vez se encuentre dentro del editor modifique lo siguiente:
       * ```apiVersion```: si su clúster es de versión 4.6 o posterior coloque ```networking.k8s.io/v1```. Si su clúster es de versión 4.5 o menor coloque ```networking.k8s.io/v1beta1```.
-      * ```host: <ingress_subdomain>```: en el valor de <ingress_subdomain> coloque el *Ingress subdomain* de su clúster, obtenido en el paso 1.
+      * ```host: <ingress_subdomain>```: en el valor de ```<ingress_subdomain>>``` coloque el *Ingress subdomain* de su clúster, obtenido en el paso 1.
       * ```path: /<app_path>```: reemplace ```<app_path>``` con la ruta en la que escucha su aplicación. Si su aplicación no escucha en una ruta específica, defina la ruta raíz solo con ```/```. 
       * ```name: <service_name>```: reemplce ```<service_name>``` con el nombre del servicio de la aplicación. Por ejemplo: ```name: listas```.
       * ```number: <service_port>```: indique el puerto de escucha del servicio en ```<service_port>```. 
@@ -223,6 +223,8 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    <br />    
    
    Presione ```Ctrl s``` para guardar el archivo y luego ```Ctrl x``` para salir.
+   
+   <br />
 
 6. Visualice nuevamente el archivo con el comando ```cat myingressresource.yaml``` e identifique los cambios realizados en base a su información.
    <br />
