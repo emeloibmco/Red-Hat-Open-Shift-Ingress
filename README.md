@@ -175,7 +175,10 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    ```powershell
    cat myingressresource.yaml
    ```
-   <br />
+        
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/catInicial.PNG"></p>
+
+   <br />   
    
    El archivo que debe visualizar contiene lo siguiente:
    
@@ -197,11 +200,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
                port:
                  number: <service_port>
    ```  
-      
-     
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/catInicial.PNG"></p>
-
-   <br />   
+   <br />
   
 5. Edite el archivo .yaml con los datos de su aplicación y clúster. Para ello coloque el comando:
 
