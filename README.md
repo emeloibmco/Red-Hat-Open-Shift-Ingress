@@ -175,30 +175,8 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    cat myingressresource.yaml
    ```
         
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/catInicial.PNG"></p>
-
-   <br />   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/catInicial.PNG"></p>  
    
-   El archivo que debe visualizar contiene lo siguiente:
-   
-   ```powershell
-   apiVersion: networking.k8s.io/v1
-   kind: Ingress
-   metadata:
-     name: myingressresource
-   spec:
-     rules:
-     - host: <ingress_subdomain>
-       http:
-         paths:
-         - path: /<app_path>
-           pathType: ImplementationSpecific
-           backend:
-             service:
-               name: <service_name>
-               port:
-                 number: <service_port>
-   ```  
    <br />
   
 5. Edite el archivo .yaml con los datos de su aplicación y clúster. Para ello coloque el comando:
