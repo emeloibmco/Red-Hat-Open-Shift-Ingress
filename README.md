@@ -73,7 +73,7 @@ Debe crear un proyecto en el cúal desplegará la aplicación de la listas. Comp
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/oc_proyect.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/oc_proyect.png"></p>
 
    <br />
 
@@ -87,7 +87,7 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/ClonarRepoListas.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/ClonarRepoListas.png"></p>
 
    <br />
 
@@ -98,7 +98,7 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/cd_carpeta_listas.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/cd_carpeta_listas.png"></p>
 
    <br />
 
