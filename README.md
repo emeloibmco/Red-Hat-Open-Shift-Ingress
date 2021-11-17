@@ -170,7 +170,6 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    <br />   
    
 4. Visualice el contenido del archivo .yaml con el comando:
-<br />
 
    ```powershell
    cat myingressresource.yaml
@@ -233,7 +232,6 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    <br />    
    
 7. Cree el recurso ingress en el proyecto donde se encuentra su aplicación. Use el comando:
-<br />
 
    ```powershell
    oc apply -f myingressresource.yaml -n <project>
