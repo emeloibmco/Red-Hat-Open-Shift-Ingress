@@ -56,7 +56,7 @@ Debe crear un proyecto en el cúal desplegará la aplicación de la listas. Comp
 1. En la consola de OpenShift cree un nuevo proyecto. Para ello, asegúrese de estar en el rol de ```Developer```, de click en la pestaña ```Project``` y luego ```Create Project```. Allí, asígne un nombre y de click en el botón ```Create```.
 <br />
 
-<p align="center"><img src="https://github.com/emeloibmco/OpenShift-Kasten-Configuracion/blob/main/Images/Crear-proyecto-Listas-OC.gif"></p>
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/ClonarRepoListas.png"></p>
 
 <br />
 
@@ -73,7 +73,7 @@ Debe crear un proyecto en el cúal desplegará la aplicación de la listas. Comp
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/oc_proyect.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/oc_proyect.PNG"></p>
 
    <br />
 
@@ -87,7 +87,7 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/ClonarRepoListas.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/ClonarRepoListas.PNG"></p>
 
    <br />
 
@@ -98,7 +98,7 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/cd_carpeta_listas.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/cd_carpeta_listas.PNG"></p>
 
    <br />
 
@@ -117,7 +117,7 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
    
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/App_ok.gif"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/App_ok.gif"></p>
 
    <br />
 <br />
