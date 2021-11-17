@@ -134,6 +134,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 <br />
 
 1. Obtenga el *Ingress subdomain* de su clúster y guárdelo para utilizarlo en las configuraciones posteriores. Utilice el comando:
+<br />
 
    ```powershell
    ibmcloud oc cluster get -c <cluster_name_or_ID> | grep 'Ingress Subdomain'
@@ -146,6 +147,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    <br />   
    
 2. Clone el presente repositorio, ya que este contiene el archivo .yaml necesario para la implementación del ingress. Coloque el comando:
+<br />
 
    ```powershell
    git clone https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress
@@ -158,6 +160,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    <br />   
    
 3. Cambie su ubicación a la carpeta que contiene el archivo .yaml del ingress. Para ello coloque:
+<br />
 
    ```powershell
    cd Red-Hat-Open-Shift-Ingress
@@ -174,6 +177,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    <br />   
    
 4. Visualice el contenido del archivo .yaml con el comando:
+<br />
 
    ```powershell
    cat myingressresource.yaml
@@ -206,8 +210,9 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 
    <br />   
   
- 5. Edite el archivo .yaml con los datos de su aplicación y clúster. Para ello coloque el comando:
- 
+5. Edite el archivo .yaml con los datos de su aplicación y clúster. Para ello coloque el comando:
+<br />
+
    ```
    nano myingressresource.yaml
    ```
@@ -235,6 +240,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
    <br />    
    
 7. Cree el recurso ingress en el proyecto donde se encuentra su aplicación. Use el comando:
+<br />
 
    ```powershell
    oc apply -f myingressresource.yaml -n <project>
