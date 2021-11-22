@@ -17,6 +17,7 @@
 ## Pre-Requisitos :pencil:
 * Cuenta en IBM Cloud.
 * Clúster OpenShift en VPC.
+* Contar con una VPC.
 <br />
 
 ## Acceder al clúster :round_pushpin:
@@ -279,14 +280,40 @@ Para crear un servicio DNS realice lo siguiente:
 2. Seleccione el servicio ```DNS Services```. Posteriormente complete los campos solicitados de la siguiente manera:
 
    * Seleccione el plan de precios ```Standard DNS```.
-   * 
-<br />
+   * Asígen un nombre exclusivo para el servicio.
+   * Seleccione el grupo de recursos (coloque el mismo grupo de recursos correspondiente al clúster).
+   
+   Para finalizar, acepte haber leído los acuerdos de licencia y de click en el botón ```Create```.
+   
+   <br />
 
-<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/ServicioDNS.gif"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/ServicioDNS.gif"></p>
 
-<br />
+   <br />
 
 ### Registrar nombre de dominio
+Luego de desplegar el servicio DNS, debe registrar un nombre de dominio personalizado para exponer la aplicación a través del ingress. Para ello, realice lo siguiente:
+<br />
+
+1. En la pestaña ```DNS Zones``` de click en el botón ```Create Zone```. Asigne un dominio en el campo ```Name``` (por ejemplo: ```dns-ibmcloud-net.com```) y para finalizar de click en el botón ```Create zone```.
+<br />
+
+2. Seleccione la Zona DNS creada.
+<br />
+
+3. En un principio, el estado de la Zona DNS debe ser ```pending```. Para modificarlo, de click la pestaña ```Permitted Networks``` y allí presione el botón ```Add network```. Luego, seleccione la región y VPC en donde se encuentra su clúster y de click en ```Add network```. Después de agregar la VPC, el estado de la Zona DNS deberpa cambiar a ```Active```.
+<br />
+
+4. De click en la pestaña ```DNS records``` y presione el botón ```Add record```. Luego, complete los campos solicitados de la siguiente maneras:
+
+   * ```Type```: CNAME.
+   * ```TTL```: 15 min.
+   * ```Name```: www.
+   * ```Type```: Asígne un nombre canónico, por ejemplo: ```dns-ibmcloud-net.com```.
+<br />
+
+5. Para finalizar, de click en el botón ```Save record```.
+   
 <br />
 
 <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/CrearDNS.gif"></p>
