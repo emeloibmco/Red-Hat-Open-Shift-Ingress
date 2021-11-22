@@ -321,7 +321,7 @@ Luego de desplegar el servicio DNS, debe registrar un nombre de dominio personal
 <br />
 
 ### Exponer aplicación a través del Ingress
-Complete los siguientes pasos para exponer la aplicación .NET a través de ingress con un nombre de dominio personalizadp:
+Complete los siguientes pasos para exponer la aplicación .NET a través de ingress con un nombre de dominio personalizado:
 <br />
 
 1. En la misma ventana de IBM Cloud Shell, seleccione el proyecto .NET desplegado. Para ello utilice el comando:
