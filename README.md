@@ -301,7 +301,7 @@ Luego de desplegar el servicio DNS, debe registrar un nombre de dominio personal
 2. Seleccione la Zona DNS creada.
 <br />
 
-3. En un principio, el estado de la Zona DNS debe ser ```pending```. Para modificarlo, de click la pestaña ```Permitted Networks``` y allí presione el botón ```Add network```. Luego, seleccione la región y VPC en donde se encuentra su clúster y de click en ```Add network```. Después de agregar la VPC, el estado de la Zona DNS deberpa cambiar a ```Active```.
+3. En un principio, el estado de la Zona DNS debe ser ```pending```. Para actualizarlo, de click la pestaña ```Permitted Networks``` y allí presione el botón ```Add network```. Luego, seleccione la región y VPC en donde se encuentra su clúster y de click en ```Add network```. Después de agregar la VPC el estado de la Zona DNS deberá cambiar a ```Active```.
 <br />
 
 4. De click en la pestaña ```DNS records``` y presione el botón ```Add record```. Luego, complete los campos solicitados de la siguiente maneras:
