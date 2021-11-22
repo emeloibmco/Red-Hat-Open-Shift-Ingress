@@ -392,7 +392,7 @@ Complete los siguientes pasos para exponer la aplicación .NET a través de ingr
 8. Para probar el funcionamiento de la aplicación a través del ingress, en la consola web de OpenShift cambie al rol de ```Administrator```. Luego de click en la sección ```Networking``` ➡ ```Ingresses``` y observe que aparezca el ingress creado. Luego, de click en la pestaña ```Routes``` y allí identifique 2 rutas para la aplicación:
 
    * La ruta obtenida en el despliegue de la aplicación.
-   * La ruta generada con el ingress (observe que la URL se compone del nombre de dominio personalizado, el cual contiene el DNS registrado junto con el Ingress Sundomain del clúster).
+   * La ruta generada con el ingress (observe que la URL se compone del nombre de dominio personalizado, el cual contiene el DNS registrado junto con el *Ingress Sundomain* del clúster).
 
    Para continuar, de click sobre ambas rutas. Como resultado debe obtener la aplicación funcionando con las 2 URL.
 
@@ -404,10 +404,10 @@ Complete los siguientes pasos para exponer la aplicación .NET a través de ingr
 
 <br />
 
-
-
 ## Referencias :mag:
 * <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-ingress-qs-roks4">Quick start for Ingress</a>.
+* <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-ingress-roks4">Setting up Ingress</a>.
+* <a href="https://cloud.ibm.com/docs/dns-svcs?topic=dns-svcs-getting-started">Getting started with IBM Cloud DNS Services</a>.
 <br />
 
 ## Autores :black_nib:
