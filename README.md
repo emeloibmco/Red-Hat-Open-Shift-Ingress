@@ -274,7 +274,7 @@ Para exponer aplicaciones a través del ingress es posible personalizar un nombr
 Para crear un servicio DNS realice lo siguiente:
 <br />
 
-1. Acceda al catálogo en el portal de IBM Cloud y allí coloque DNS para encontrar los servicio.
+1. Acceda al catálogo en el portal de IBM Cloud y allí coloque DNS para encontrar el servicio.
 <br />
 
 2. Seleccione el servicio ```DNS Services```. Posteriormente complete los campos solicitados de la siguiente manera:
