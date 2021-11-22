@@ -348,7 +348,7 @@ Complete los siguientes pasos para exponer la aplicación .NET a través de ingr
    Luego, edite los campos de la siguiente manera:
    
    * ```apiVersion```: si su clúster es de versión 4.6 o posterior coloque ```networking.k8s.io/v1```. Si su clúster es de versión 4.5 o menor coloque ```networking.k8s.io/v1beta1```.
-   * ```host: <ingress_subdomain>```: en el valor de ```<ingress_subdomain>``` coloque: ```<dns_personalizado>.<ingress_subdomain>```. Donde ```<dns_personalizado>``` corresponde al nombre de dominio generado en el servicio DNS y el ```<ingress_subdomain>``` corresponde al valor del *Ingress Subdomain* del clúster.
+   * ```host: <ingress_subdomain>```: en el valor de ```<ingress_subdomain>``` coloque: ```<dns_personalizado>.<ingress_subdomain>```, donde ```<dns_personalizado>``` corresponde al nombre de dominio generado en el servicio DNS y el ```<ingress_subdomain>``` corresponde al valor del *Ingress Subdomain* del clúster.
    * ```path: /<app_path>```: reemplace ```<app_path>``` con la ruta en la que escucha su aplicación. Si su aplicación no escucha en una ruta específica, defina la ruta raíz solo con ```/```. 
    * ```name: <service_name>```: reemplace ```<service_name>``` con el nombre del servicio de la aplicación. Por ejemplo: ```name: net-sample-app```.
    * ```number: <service_port>```: indique el puerto de escucha del servicio en ```<service_port>```. 
