@@ -280,10 +280,10 @@ Para crear un servicio DNS realice lo siguiente:
 2. Seleccione el servicio ```DNS Services```. Posteriormente complete los campos solicitados de la siguiente manera:
 
    * Seleccione el plan de precios ```Standard DNS```.
-   * Asígen un nombre exclusivo para el servicio.
+   * Asígne un nombre exclusivo para el servicio.
    * Seleccione el grupo de recursos (coloque el mismo grupo de recursos correspondiente al clúster).
    
-   Para finalizar, acepte haber leído los acuerdos de licencia y de click en el botón ```Create```.
+   Para finalizar acepte haber leído los acuerdos de licencia y de click en el botón ```Create```.
    
    <br />
 
