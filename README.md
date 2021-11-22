@@ -210,7 +210,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
       * ```apiVersion```: si su clúster es de versión 4.6 o posterior coloque ```networking.k8s.io/v1```. Si su clúster es de versión 4.5 o menor coloque ```networking.k8s.io/v1beta1```.
       * ```host: <ingress_subdomain>```: en el valor de ```<ingress_subdomain>``` coloque el *Ingress subdomain* de su clúster, obtenido en el paso 1.
       * ```path: /<app_path>```: reemplace ```<app_path>``` con la ruta en la que escucha su aplicación. Si su aplicación no escucha en una ruta específica, defina la ruta raíz solo con ```/```. 
-      * ```name: <service_name>```: reemplce ```<service_name>``` con el nombre del servicio de la aplicación. Por ejemplo: ```name: listas```.
+      * ```name: <service_name>```: reemplace ```<service_name>``` con el nombre del servicio de la aplicación. Por ejemplo: ```name: listas```.
       * ```number: <service_port>```: indique el puerto de escucha del servicio en ```<service_port>```. 
    
    <br />
@@ -264,8 +264,102 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 
 <br />
 
+
 ### Nombre de dominio personalizado
+Para exponer aplicaciones a través del ingress es posible personalizar un nombre de dominio y usarlo junto con el *Ingress subdomain* del clúster OpenShift. Para este caso , es necesario hacer uso de un servicio DNS para registrar el nombre de dominio. Para eset ejercicio, se utilizará la aplicación de ejemplo .NET desplegada.
 <br />
+
+### Crear Servicio DNS
+<br />
+
+### Registrar nombre de dominio
+<br />
+
+### Exponer aplicación a través del Ingress
+Para este caso de ejemplo, se va a exponer la aplicación desplegada *Angular Web List*. Complete los siguientes pasos para exponer su aplicación:
+<br />
+
+1. En la misma ventana de IBM Cloud Shell, seleccione el proyecto .NET desplegado. Para ello utilice el comando:
+
+   ```powershell
+   oc project <nombre_proyecto>
+   ```
+   
+   Ejemplo:
+   
+   ```powershell
+   oc project net-app-test
+   ```
+   
+   <br />
+   
+2. Teniendo en cuenta que previamente clon+o el repositorio que contiene el archivo ```myingressresource.yaml```, asegúrese de estar en la ubicación de la carpeta que lo contiene (```Red-Hat-Open-Shift-Ingress/Files```) y edite el archivo con los nuevos datos de la aplicación. Utilice el comando:
+
+   ```powershel
+   nano myingressresource.yaml
+   ```
+   <br />
+   
+   Luego, edite los campos de la siguiente manera:
+   
+   * ```apiVersion```: si su clúster es de versión 4.6 o posterior coloque ```networking.k8s.io/v1```. Si su clúster es de versión 4.5 o menor coloque ```networking.k8s.io/v1beta1```.
+   * ```host: <ingress_subdomain>```: en el valor de ```<ingress_subdomain>``` coloque: ```<dns_personalizado>.<ingress_subdomain>```. Donde ```<dns_personalizado>``` corresponde al nombre de dominio generado en el servicio DNS y el ```<ingress_subdomain>``` corresponde al valor del *Ingress Subdomain* del clúster.
+   * ```path: /<app_path>```: reemplace ```<app_path>``` con la ruta en la que escucha su aplicación. Si su aplicación no escucha en una ruta específica, defina la ruta raíz solo con ```/```. 
+   * ```name: <service_name>```: reemplace ```<service_name>``` con el nombre del servicio de la aplicación. Por ejemplo: ```name: net-sample-app```.
+   * ```number: <service_port>```: indique el puerto de escucha del servicio en ```<service_port>```. 
+   
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/nano.PNG"></p>
+
+   <br />    
+   
+   Presione ```Ctrl s``` para guardar el archivo y luego ```Ctrl x``` para salir.
+   
+   <br />
+
+6. Visualice el archivo con el comando ```cat myingressresource.yaml``` e identifique los cambios realizados en base a su información.
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/cat.PNG"></p>
+
+   <br />    
+   
+7. Cree el recurso ingress en el proyecto donde se encuentra su aplicación. Use el comando:
+
+   ```powershell
+   oc apply -f myingressresource.yaml -n <project>
+   ```
+   
+   Ejemplo:
+   
+   ```powershell
+   oc apply -f myingressresource.yaml -n net-app-test
+   ```
+
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/oc_apply.PNG"></p>
+
+   <br />   
+
+
+8. Para probar el funcionamiento de la aplicación a través del ingress, en la consola web de OpenShift cambie al rol de ```Administrator```. Luego de click en la sección ```Networking``` ➡ ```Ingresses``` y observe que aparezca el ingress creado. Luego, de click en la pestaña ```Routes``` y allí identifique 2 rutas para la aplicación:
+
+   * La ruta obtenida en el despliegue de la aplicación.
+   * La ruta generada con el ingress (observe que la URL se compone del nombre de dominio personalizado, el cual contiene el DNS registrado junto con el Ingress Sundomain del clúster).
+
+   Para continuar, de click sobre ambas rutas. Como resultado debe obtener la aplicación funcionando con las 2 URL.
+
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/IngressNet.gif"></p>
+
+   <br />  
+
+<br />
+
+
 
 ## Referencias :mag:
 * <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-ingress-qs-roks4">Quick start for Ingress</a>.
