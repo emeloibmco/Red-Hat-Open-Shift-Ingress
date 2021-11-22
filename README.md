@@ -247,6 +247,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 <br />
 
 ## Referencias :mag:
+* <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-ingress-qs-roks4">Quick start for Ingress</a>.
 <br />
 
 ## Autores :black_nib:
