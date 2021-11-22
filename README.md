@@ -312,7 +312,7 @@ Luego de desplegar el servicio DNS, debe registrar un nombre de dominio personal
    * ```Type```: Asígne un nombre canónico, por ejemplo: ```dns-ibmcloud-net.com```.
 <br />
 
-5. Para finalizar, de click en el botón ```Save record```.
+5. Para finalizar, de click en el botón ```Add record```.
    
 <br />
 
