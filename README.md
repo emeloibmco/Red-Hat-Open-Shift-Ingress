@@ -16,7 +16,7 @@
 
 ## Pre-Requisitos :pencil:
 * Tener una cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a> <img width="25" src="https://github.com/emeloibmco/IBM-Cloud-Kubernetes-Angular-Web-List/blob/main/Images/ibm-cloud-logo.png">.
-* Clúster OpenShift en VPC.
+* Tner un clúster OpenShift en VPC.
 * Contar con una VPC.
 <br />
 
