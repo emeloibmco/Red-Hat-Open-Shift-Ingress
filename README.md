@@ -10,6 +10,9 @@
 4. [Exponer aplicaciones mediante Ingress](#Exponer-aplicaciones-mediante-Ingress-outbox_tray)
     * [Subdominio proporcionado por IBM](#Subdominio-proporcionado-por-IBM)
     * [Nombre de dominio personalizado](#Nombre-de-dominio-personalizado)
+      * [Crear Servicio DNS](#Crear-Servicio-DNS)
+      * [Registrar nombre de dominio](#Registrar-nombre-de-dominio)
+      * [Exponer aplicación a través del Ingress](#Exponer-aplicación-a-través-del-Ingress)
 5. [Referencias](#Referencias-mag)
 6. [Autores](#Autores-black_nib)
 <br />
