@@ -1,5 +1,5 @@
 # Ingress - Red Hat OpenShift <img width="26" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/logo_oc.png">
-Ingress es un servicio que equilibra las cargas de trabajo del tráfico de red en su clúster mediante el reenvío de solicitudes públicas o privadas a sus aplicaciones. Puede utilizar Ingress para exponer varios servicios de aplicaciones al público o a una red privada mediante el uso de un dominio público o privado único.
+Ingress es un servicio que equilibra las cargas de trabajo del tráfico de red en su clúster mediante el reenvío de solicitudes públicas o privadas a sus aplicaciones. Puede utilizar Ingress para exponer varios servicios de aplicaciones a una red pública o privada mediante el uso de un dominio público o privado único.
 
 En la presente guía se indican los pasos necesarios para exponer aplicaciones a través del Ingress en un clúster de OpenShift, mediante el uso del *Ingress Subdomain* y el registro de un dominio personalizado.
 
