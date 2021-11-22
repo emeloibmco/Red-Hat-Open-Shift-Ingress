@@ -338,7 +338,7 @@ Complete los siguientes pasos para exponer la aplicación .NET a través de ingr
    
    <br />
    
-2. Teniendo en cuenta que previamente clon+o el repositorio que contiene el archivo ```myingressresource.yaml```, asegúrese de estar en la ubicación de la carpeta que lo contiene (```Red-Hat-Open-Shift-Ingress/Files```) y edite el archivo con los nuevos datos de la aplicación. Utilice el comando:
+2. Teniendo en cuenta que previamente clonó el repositorio que contiene el archivo ```myingressresource.yaml```, asegúrese de estar en la ubicación de la carpeta que lo contiene (```Red-Hat-Open-Shift-Ingress/Files```) y edite el archivo con los nuevos datos de la aplicación. Utilice el comando:
 
    ```powershel
    nano myingressresource.yaml
