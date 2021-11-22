@@ -56,7 +56,7 @@ Para acceder al clúster de OpenShift, complete los siguientes pasos:
 Debe crear un proyecto en el cúal desplegará la aplicación de la listas. Complete los siguientes pasos:
 <br />
 
-1. En la consola de OpenShift cree un nuevo proyecto. Para ello, asegúrese de estar en el rol de ```Developer```, de click en la pestaña ```Project``` y luego ```Create Project```. Allí, asígne un nombre y de click en el botón ```Create```.
+1. En la consola de OpenShift cree un nuevo proyecto. Para ello, asegúrese de estar en el rol de ```Developer```, de click en la pestaña ```Project``` y luego ```Create Project```. Allí asígne un nombre y de click en el botón ```Create```.
 <br />
 
 <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/Listas/Crear-proyecto-Listas-OC.gif"></p>
