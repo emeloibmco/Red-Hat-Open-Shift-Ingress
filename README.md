@@ -135,7 +135,7 @@ Para desplegar una aplicación de ejemplo .NET 5.0 realice lo siguiente:
 2. Asigne un nombre para el proyecto y luego de click en la pestaña ```Create```.
 <br />
 
-3. Seleccione la pestaña ```+ Add``` y allí de cick en la opción ```Samples```.
+3. Seleccione la pestaña ```+ Add``` y allí de click en la opción ```Samples```.
 <br />
 
 4. De click en la opción de ejemplos ```.NET```. Asígne un nombre y para finalizar presione el botón ```Create```.
