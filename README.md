@@ -266,17 +266,25 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 
 
 ### Nombre de dominio personalizado
-Para exponer aplicaciones a través del ingress es posible personalizar un nombre de dominio y usarlo junto con el *Ingress subdomain* del clúster OpenShift. Para este caso , es necesario hacer uso de un servicio DNS para registrar el nombre de dominio. Para eset ejercicio, se utilizará la aplicación de ejemplo .NET desplegada.
+Para exponer aplicaciones a través del ingress es posible personalizar un nombre de dominio y usarlo junto con el *Ingress subdomain* del clúster OpenShift. Para este caso, es necesario hacer uso de un servicio DNS para registrar el nombre de dominio. Para este ejercicio se utilizará la aplicación de ejemplo .NET desplegada.
 <br />
 
 ### Crear Servicio DNS
 <br />
 
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/ServicioDNS.gif"></p>
+
+<br />
+
 ### Registrar nombre de dominio
 <br />
 
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/CrearDNS.gif"></p>
+
+<br />
+
 ### Exponer aplicación a través del Ingress
-Para este caso de ejemplo, se va a exponer la aplicación desplegada *Angular Web List*. Complete los siguientes pasos para exponer su aplicación:
+Para este caso de ejemplo, se va a exponer la aplicación de ejemplo .NET. Complete los siguientes pasos para exponer su aplicación:
 <br />
 
 1. En la misma ventana de IBM Cloud Shell, seleccione el proyecto .NET desplegado. Para ello utilice el comando:
