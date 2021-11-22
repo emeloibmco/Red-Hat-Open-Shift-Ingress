@@ -125,7 +125,28 @@ Luego de tener el proyecto listo, el paso siguiente consiste en desplegar la apl
 <br />
 
 ### Desplegar aplicación de ejemplo NET
+Para desplegar una aplicación de ejemplo .NET 5.0 realice lo siguiente:
 <br />
+
+1. En la consola web de OpenShift, despliegue la pestaña ```Project``` y de click en la opción ```Create Project```.
+<br />
+
+2. Asigne un nombre para el proyecto y luego de click en la pestaña ```Create```.
+<br />
+
+3. Seleccione la pestaña ```+ Add``` y allí de cick en la opción ```Samples```.
+<br />
+
+4. De click en la opción de ejemplos ```.NET```. Asígne un nombre y para finalizar presione el botón ```Create```.
+<br />
+
+5. Espere unos minutos mientras se completa el despliegue de la aplicación. Luego de click en ```Open URL``` y visualice la aplicación de ejemplo funcionando.
+
+   <br />
+   
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Ingress/blob/main/Images/NetApp/AppNETSample.gif"></p>
+
+   <br />  
 
 ## Exponer aplicaciones mediante Ingress :outbox_tray:
 
