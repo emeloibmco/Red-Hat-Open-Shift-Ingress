@@ -253,7 +253,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 8. Para probar el funcionamiento de la aplicación a través del ingress, en la consola web de OpenShift cambie al rol de ```Administrator```. Luego de click en la sección ```Networking``` ➡ ```Ingresses``` y observe que aparezca el ingress creado. Luego, de click en la pestaña ```Routes``` y allí identifique 2 rutas para la aplicación:
 
    * La ruta obtenida en el despliegue de la aplicación.
-   * La ruta generada con el ingress (observe que la URL es el mismo Ingress Sundomain del clúster).
+   * La ruta generada con el ingress (observe que la URL es el mismo *Ingress Subdomain* del clúster).
 
    Para continuar, de click sobre ambas rutas. Como resultado debe obtener la aplicación funcionando con las 2 URL.
 
