@@ -165,7 +165,7 @@ Para exponer aplicaciones a través del ingress es posible usar el *Ingress subd
 
    <br />   
    
-2. Clone el presente repositorio, ya que este contiene el archivo .yaml necesario para la implementación del ingress. Coloque el comando:
+2. Clone el presente repositorio ya que este contiene el archivo .yaml necesario para la implementación del ingress. Coloque el comando:
 
 
    ```powershell
