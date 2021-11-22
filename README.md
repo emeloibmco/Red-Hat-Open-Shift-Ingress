@@ -324,7 +324,7 @@ Luego de desplegar el servicio DNS, debe registrar un nombre de dominio personal
 Complete los siguientes pasos para exponer la aplicación .NET a través de ingress con un nombre de dominio personalizado:
 <br />
 
-1. En la misma ventana de IBM Cloud Shell, seleccione el proyecto .NET desplegado. Para ello utilice el comando:
+1. En la misma ventana de IBM Cloud Shell, seleccione el proyecto .NET. Para ello utilice el comando:
 
    ```powershell
    oc project <nombre_proyecto>
